@@ -134,7 +134,7 @@ def compute_results(L_ship, B_ship, T_ship, rho, v_min_kn, v_max_kn, v_step_kn):
 # -----------------------------
 # App
 # -----------------------------
-app = Dash(__name__, title="app")
+app = Dash(__name__, title="App")
 server = app.server
 
 def number_input(id_, label, value, step, min_=None):
@@ -263,4 +263,5 @@ def recalc(_, L_ship, B_ship, T_ship, rho, vmin, vmax, vstep):
 if __name__ == "__main__":
     # Dash >= 2.16
     app.run(debug=True)
+
 
